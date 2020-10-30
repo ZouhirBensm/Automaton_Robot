@@ -25,3 +25,7 @@ After this I programmed a algorithm that computes the averrage number of steps i
 
 ## Conclusion
 The results go from 68, 18, 15 to 12 steps on average to deliver 5 parcels for Random Robot, Mail Route Robot, Goal oriented Robot and Lazy Robot respectively. The efficiency drastically increases by implementing a route. The worst case scenario for Mail Route Robot is 2 iterations over it's route. This worst case scenario is rare. Random Robot on the other hand can most likely take numerous steps to finish and has the potentiality to never finish (extremely rare case)! The major conclusion is to always consider worste case scenarions in applications and to consider them as number one factors if they can cause crucial consequences. Average and best case scenarios are also important! 
+
+Reference:
+
+Eloquent JavaScript by: Marijn Haverbeke
