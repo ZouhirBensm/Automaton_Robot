@@ -81,7 +81,7 @@ function randomPick(array) {
 //All robots in this project are simply input to the runRobot function. What is important is that it defines an object with properties (next) direction and a memory of future destinations that is not necessary for the randomRobot.
 
 //Type 1 robot: Random Robot
-//This robot returns a object direction by calling the randomPick function.
+//This robot returns an object direction by calling the randomPick function.
 //The array element that is randomly chosen is provided thanks to the current place the robot is at, thus it is one of the locations the robot is allowed to access defined by the roadGraph object!
 function randomRobot(state) {
   return {direction: randomPick(roadGraph[state.place])};
