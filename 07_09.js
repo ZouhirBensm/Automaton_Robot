@@ -121,9 +121,10 @@ function routeRobot(state, memory) {
   if (memory.length == 0) { //Re-creates the same route needed to take as memory for the robot once the previous memory array has been all "sliced" (removed one by one starting from the the leftmost element)
     memory = mailRoute;
   }
-  return {direction: memory[0], memory: memory.slice(1)}; //
+  return {direction: memory[0], memory: memory.slice(1)}; 
 }
 
+//run MailRoute Robot
 console.log("\nLet's run our Mail Route robot to deliver our 5 parcels!\n")
 runRobot(VillageState.random(), routeRobot, []);
 
