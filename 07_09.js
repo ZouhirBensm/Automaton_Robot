@@ -12,7 +12,7 @@ var roads = [
 ];
 
 
-//Transforms the data to become an object with properties. The properties are every location with each having an array as a value contraining locations that can be accessed as elements.
+//Transforms the data to become an object with properties. The properties are every location with each having an array as a value containing locations that can be accessed as elements.
 function buildGraph(edges) {
   let graph = Object.create(null);
   function addEdge(from, to) {
