@@ -166,7 +166,7 @@ runRobot(VillageState.random(), goalOrientedRobot, []);
 
 
 //Type 4 robot: Lazy Robot
-//Finds best route for all parcels then operates on the shortest route it needs to get and un-picked up parcels routes get a 0.5 priority compared to picked up ones that need to the address route when the robot needs to choose the destination! 
+//Finds best route for all parcels then operates on the shortest route it needs to get. An un-picked up parcels route get a 0.5 priority compared to picked up ones, when the robot needs to choose the destination! 
 function lazyRobot({place, parcels}, route) {
   if (route.length == 0) {
     // Describe a route for every parcel
