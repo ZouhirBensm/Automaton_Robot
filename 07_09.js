@@ -160,23 +160,6 @@ function goalOrientedRobot({place, parcels}, route) {
 }
 
 
-//This function counts the number of movements the robot took to deliver a set of parcels
-//This function also sets the first state of the system, the type of robot to be used, and the memory of the places to go.
-function runRobot(state, robot, memory) {
-  for (let turn = 0;; turn++) {
-    if (state.parcels.length == 0) {
-      console.log(`=>	Done in ${turn} turns	<=`);
-      break;
-    }
-    let action = robot(state, memory); //The action binding returns an object with 2 properties (1): the next direction the robot needs to take and (2) the next places to go to, ie: the memory.
-    //Action depends on the current robot state and current memory. It helps to think of the robot function as a dynamic function because it's inputs are constantly changing.
-    state = state.move(action.direction); //Updates the robot state based on new destination to achieve and withdrew from memory!
-    memory = action.memory; //Updates the memory by dumping the location just achieved and using the next!
-    console.log(`Moved to ${action.direction}`); //displays where the robot is moving to!
-  }
-}
-
-
 console.log("\nLet's run our Goal Oriented robot to deliver our 5 parcels!\n")
 runRobot(VillageState.random(), goalOrientedRobot, []);
 
