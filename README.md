@@ -4,7 +4,7 @@ Most Sophisticated project I have achieved so far! This computer program creates
 
 ## Input
 
-The input is a roads array with the starting and ending points the robot is allowed to take! Then we modify it to a graph. The data structure of the graph is an object. The onject has each place as a property. The values of each properties is an array of all the places the robot can move to.
+The input is a roads array with the starting and ending points the robot is allowed to take! Then we modify it to a graph. The data structure of the graph is an object. The object has each place as a property. The values of each properties is an array of all the places the robot can move to.
 
 ## How the code operates
 
@@ -18,7 +18,7 @@ This robot follows a specific route. The datastructure of the route is an array 
 ### Robot 3: Goal Orriented Robot
 This robot implements an algorithm to computes the best route to take for a particular parcel. Once the best route is computed it is stored in memory. The robot executes on that specific route. Every time the move achieved it re-computes the best move to a detination. 
 ### Robot 4: Lazy Robot
-This robot implements a more optimised algorith. Instead of computing the best direction for each parcel at a time, it computes the best direction based on all the parcels it needs to pick up and deliver. For this task it implements an algorithm that branches all of the routes, and thanks to a preceding if statement determines the shortest route, ie: computed the fastest. The most importante criteria for a route to be taken is its length. The second criteria that weights in is it's for a parcel pick up. 
+This robot implements a more optimised algorith. Instead of computing the best direction for each parcel at a time, it computes the best direction based on all the parcels it needs to pick up and deliver. For this task it implements an algorithm that branches all of the routes, and thanks to a preceding if statement determines the shortest route, ie: computed the fastest. The most important criteria for a route to be taken is its length. The second criteria that weights in is it's for a parcel pick up. 
 
 ## Comparisions
 After this I programmed an algorithm that computes the averrage number of steps it takes for each robot to deliver 5 parcels. The program calculates this average based on 100 cases. The code outputs the result when it is assigned 2 robots for comparison.
