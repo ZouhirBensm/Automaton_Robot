@@ -161,7 +161,7 @@ function goalOrientedRobot({place, parcels}, route) {
 
 
 //This function counts the number of movements the robot took to deliver a set of parcels
-//This function also sets the first state of the system, the type of robot to be used (explained later), and the memory (explained later) of the places to go.
+//This function also sets the first state of the system, the type of robot to be used, and the memory of the places to go.
 function runRobot(state, robot, memory) {
   for (let turn = 0;; turn++) {
     if (state.parcels.length == 0) {
