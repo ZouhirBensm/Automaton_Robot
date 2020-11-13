@@ -129,7 +129,7 @@ console.log("\nLet's run our Mail Route robot to deliver our 5 parcels!\n")
 runRobot(VillageState.random(), routeRobot, []);
 
 //Type 3 robot: Goal Orriented Robot
-//This is a sophisticard robot that will compute the shortest path to the current parcels place or destination based on the first parcel the robot has to consider!
+//This is a sophisticated robot that will compute the shortest path to the current parcels place or destination based on the first parcel the robot has to consider!
 
 //This function takes the graph object and computes the shortest path from "from" (place) to "to" (parcel.place or parcel.address)
 function findRoute(graph, from, to) {
