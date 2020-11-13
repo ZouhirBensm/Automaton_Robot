@@ -48,7 +48,7 @@ var VillageState = class VillageState {
     } else {
       let parcels = this.parcels.map(p => { //Iterates on each parcel
         if (p.place != this.place) return p; //If robot not at pick up location do nothing to parcel
-        return {place: destination, address: p.address}; //If robot got to parcels pickup location once the parcels place will always stay binded to the robots movements
+        return {place: destination, address: p.address}; //If robot got to parcels pickup location once, the parcels place will always stay binded to the robots movements
       }).filter(p => p.place != p.address); //Once the parcels place equals it's destination the parcel is filtered out of the list of parcels TO BE delivered since IT GOT delivered!
       return new VillageState(destination, parcels); //The return new state always updates it's new location, ie: destination -per move!
     }
