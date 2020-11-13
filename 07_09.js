@@ -78,7 +78,7 @@ function randomPick(array) {
   return array[choice];
 }
 
-//All robots in this project are simply input to the runRobot function. What is important is that define a object with properties (next) direction and a memory of future destinations that is not necessary for the randomRobot.
+//All robots in this project are simply input to the runRobot function. What is important is that it defines an object with properties (next) direction and a memory of future destinations that is not necessary for the randomRobot.
 
 //Type 1 robot: Random Robot
 //This robot returns a object direction by calling the randomPick function.
